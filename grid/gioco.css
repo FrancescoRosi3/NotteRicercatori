@@ -38,7 +38,7 @@ body{
     display: grid;
     grid-template-areas:
       'titolo titolo titolo titolo titolo'
-      'spazioP1 pulsanti pulsanti pulsanti spazioP2 '
+      'pulsanti pulsanti pulsanti pulsanti pulsanti '
       'indicatore indicatore indicatore indicatore indicatore '
       'cpu cpu spazio user user '
       'footer footer footer footer footer';
