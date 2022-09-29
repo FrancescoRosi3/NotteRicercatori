@@ -1,0 +1,118 @@
+.titolo{
+
+    font-size:3.2ch;
+    text-align:center;
+    margin: 50px 0px;
+    border:none;
+}
+/* .pseudo{
+    width:25%;
+    height:600px;
+    margin-left:20%;
+    font-size:2ch;
+    font-family: 'Courier New', Courier, monospace;
+    border:2px solid black;
+    border-radius:15px;
+    background-color: #2E4E85;
+    color:white;
+} */
+
+/* .gif{
+    border-radius:15px;
+    width:30%;
+    margin-left:50%;
+    position:absolute;
+}
+.testo{
+    width:28%;
+    margin-left:50%;
+
+    font-size:2ch;
+    border:2px solid black;
+    border-radius:20px;
+    position:absolute;
+    padding:1% 1% 0% 1%;
+    background-color: #2E4E85;
+    color:white;
+} */
+
+.imgif{
+    border:2px black solid;
+    border-radius:15px;
+    width:100%;
+    margin:auto;
+}
+
+button{
+    background-color: #FFAA00;
+    font-family:Lato, Geneva, Tahoma, sans-serif;
+    font-size: 2ch;
+    width:fit-content;
+    border-radius: 8px;
+    height:35px;
+    margin-top:15px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+.container{
+    
+    display:grid;
+    grid-template-areas: 
+    't t'
+    'a b'
+    'a c'
+    'puls1 puls2';
+    /* border:2px black solid; */
+
+    width:70%;
+    margin:50px auto;
+
+}
+.container>div{
+    border-radius:15px;
+    /* border: 1px black solid; */
+}
+
+.t{
+    grid-area:t;
+    font-size:3.2ch;
+    text-align:center;
+    color:black;
+    margin-bottom:20px;
+}
+
+.a{
+    grid-area:a;
+    width:96%;
+    margin-left:-3%;
+    padding:3%;
+
+    border:2px black solid;
+    background-color: #2E4E85;
+    color:white;
+    
+}
+
+.b{
+    grid-area:b;
+    width:99%;
+    margin-left:2.5%;   
+}
+
+.c{
+    grid-area:c;
+    width:94%;
+    padding:3%;
+    margin-left:2.5%;
+
+    border:2px black solid;
+    background-color: #2E4E85;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.puls1{
+    grid-area: puls1;
+}
+.puls2{
+    grid-area: puls2;
+}

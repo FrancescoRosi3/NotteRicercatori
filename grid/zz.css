@@ -1,0 +1,26 @@
+.titolo { grid-area: titolo; background-color: beige;}
+.indicatore { grid-area: indicatore; background-color: beige;  }
+.spazio { grid-area: spazio;  background-color: #2196F3; }
+.cpu { grid-area: cpu; height:300px; margin-right:-5%; background-color: beige;}
+.user { grid-area: user; margin-left:-5%; background-color: beige;}
+.footer { grid-area: footer;background-color: beige; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'titolo titolo titolo titolo titolo titolo titolo'
+    'indicatore indicatore indicatore indicatore indicatore indicatore indicatore '
+    'cpu cpu cpu spazio user user user'
+    'footer footer footer footer footer footer footer ';
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 10px;
+  margin:0% 10%;
+}
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}

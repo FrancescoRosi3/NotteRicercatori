@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Sfida l'algoritmo</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/ico" href="../logo - Copia.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Space+Mono:300,400,600,700&amp;lang=en" />
+        <script src="../jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    </head>
+    <body>
+        
+                <header>
+                    <div id="cont">
+                        <a href="index.html">
+                            <img id="id_logo" src="../logo.svg">
+                        </a>                        
+                        <p id="uno"> Corso di Laurea in <span id="due"> Informatica</span></p>
+                    </div>
+                </header>
+                <div class="subheader">
+                    DIPARTIMENTO SCIENZE MATEMATICHE, FISICHE E INFORMATICHE
+                </div>
+
+                <div class="grid-container">
+                    <div class="title">SFIDA L'ALGORITMO</div>
+                    <div class="Selection">Selection Sort </div>
+                    <div class="Bubble">Bubble Sort </div>
+
+                </div>
+
+
+
+        <script>
+            ///////////////////////////////////// CARICAMENTO PAGINA //////////////////////////////////////////////////
+
+            if(parseInt($("#id_logo").css('width').slice(0,-2))<150){
+                $("#id_logo").css('width','260px');       
+            } 
+
+             if(parseInt($("html").css('width').slice(0,-2))>1200){
+                console.log('pc');
+                //se sono su pc
+                $(".grid-container").css('margin','0% 5%');
+                $("#uno").css('margin-top','5px');
+                $(".subheader").html("<span>DIPARTIMENTO SCIENZE MATEMATICHE, FISICHE E INFORMATICHE</span>");
+             }
+             else{ //se sono su tablet cell
+                console.log('smart');
+                $(".grid-container").css('margin','0% 10%');
+                $(".subheader").addClass('shp');
+            }
+            ////////////////////////////////////////////////////////////////////////////////////
+
+                         
+                
+
+            
+            $(".Selection").on({
+                click:function(){
+                    $(location).attr('href','selectionsort.html');
+                },
+
+                mouseenter:function(){
+                    $(this).css("background-color","white");
+                    $(this).css("color","rgb(68,114,196)");
+                },
+
+                mouseleave:function(){
+                    $(this).css("background-color","rgb(68,114,196)");
+                    $(this).css("color","white");
+                }
+            })
+
+            $(".Bubble").on({
+                click:function(){
+                    $(location).attr('href','bubblesort.html');
+                },
+
+                mouseenter:function(){
+                    $(this).css("background-color","white");
+                    $(this).css("color","rgb(68,114,196)");
+                },
+
+                mouseleave:function(){
+                    $(this).css("background-color","rgb(68,114,196)");
+                    $(this).css("color","white");
+                }
+            })
+        </script>
+    </body>
+</html>

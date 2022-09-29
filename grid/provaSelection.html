@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stiletto.css">
+        <script src="../jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    </head>
+    <body>
+        <!-- <div class="a" ord=1 id=1 pos=0 style="width:100px;height:100px;background-color:red;position:absolute;"> 1</div>
+        <div class="a" ord=2 id=2 pos=0 style="width:100px;height:100px;background-color:red;margin-left:110px;position:absolute;"> 2</div>
+        <div class="a" ord=3 id=3 pos=0 style="width:100px;height:100px;background-color:red;margin-left:220px;position:absolute;"> 3</div> -->
+    
+        <div class="container">
+            <div class="a">L'algoritmo BUBBLE SORT ha come scopo, quello di organizzare <br>in ordine crescente tutti gli elementi di una sequenza.
+                <p> Esegue un ''ciclo'' tante volte quanti sono gli elementi della <br>sequenza, e ad ogni ciclo calcola e trova la posizione esatta<br> di un elemento alla volta.</p>
+                <p> Infatti Bubble Sort controlla se un elemento è maggiore o <br>minore del successivo, e nel caso in cui sia maggiore viene <br>effettuato uno ''swap'' ovvero uno scambio fra i due.</p>
+                <p> Si otterrà quindi che per ordinare N elementi, il costo sarà <br>di N^2, poichè per ogni elemento devo controllarli tutti (N).</p>
+            </div>
+            <div class="b"><img class="imgif" src="../selectionanimation.gif"></div>
+            <div class="c">L'algoritmo BUBBLE SORT ha come scopo, quello di organizzare <br>in ordine crescente tutti gli elementi di una sequenza.
+                <p> Esegue un ''ciclo'' tante volte quanti sono gli elementi della <br>sequenza, e ad ogni ciclo calcola e trova la posizione esatta<br> di un elemento alla volta.</p>
+                </div>
+        </div>
+
+        <script>
+            
+                //$(".c").css('width','549px');       //schermo pc
+                $(".b").css('width',(parseInt($(".container").css('width').slice(0,-2)))/2+'px');
+                $(".c").css('width',(parseInt($(".container").css('width').slice(0,-2)))/2+'px');
+            
+                //schermo tablet cell
+               // $(".c").css('width','92%');
+               // $(".imgif").css('width','100%');   
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /*
+            var click1=false;
+            var click2=false;
+            var temp;
+            var id1, ord1, pos1, spost;
+            var id2, ord2, pos2;
+
+            function swap(){
+                spost=(ord2-ord1)*110;
+                pos1+=spost;
+                pos2-=spost;
+
+                $("#"+id1).animate({left: ''+ pos1+'px'},700);
+                $("#"+id2).animate({left: ''+ pos2+'px'},700);
+
+                temp=ord1;
+                $("#"+id1).attr('ord',ord2);
+                $("#"+id2).attr('ord',temp);
+
+                $("#"+id1).attr('pos',pos1);
+                $("#"+id2).attr('pos',pos2);
+                click1=false;
+                click2=false;
+            }
+
+            $(".a").click(function(){
+                $(this).css('background-color','grey');
+
+                if(click1==false){
+                    id1=$(this).attr("id");
+                    ord1=parseInt($(this).attr("ord"));
+                    pos1=parseInt($(this).attr("pos"));
+                    click1=true;
+                }
+                else{
+                    id2=$(this).attr("id");
+                    ord2=parseInt($(this).attr("ord"));
+                    pos2=parseInt($(this).attr("pos"));
+                    click2=true;
+
+                    swap();
+                    
+                    $(".a").css('background-color','red');
+                }
+                console.log(id1 +" "+ ord1 +" "+ pos1);
+                console.log(id2 +" "+ ord2 +" "+ pos2);
+                console.log(" ");
+            })*/
+        </script>
+    
+    
+    
+    </body>
+</html>

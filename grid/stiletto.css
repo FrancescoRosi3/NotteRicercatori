@@ -1,0 +1,31 @@
+.container{
+    
+
+    display:grid;
+    grid-template-areas: 
+    'a b'
+    'a c';
+    border:2px black solid;
+    gap:10px;
+    width:70%;
+    margin:auto;
+
+}
+.container>div{
+    border:2px black solid;
+}
+.a{
+    grid-area:a;
+}
+.b{
+    grid-area:b;
+    float:right;
+}
+.c{
+    grid-area:c;
+    float:right;
+}
+
+.imgif{
+    width:100%;
+}

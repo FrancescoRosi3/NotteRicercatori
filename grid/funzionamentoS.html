@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Sfida l'algoritmo</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/ico" href="../logo - Copia.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="funzionamentoB.css">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Space+Mono:300,400,600,700&amp;lang=en" />
+        <script src="../jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    </head>
+    <body>
+        
+        <header>
+            <div id="cont">
+                <a href="index.html">
+                    <img id="id_logo" src="../logo.svg">
+                </a>                        
+                <p id="uno"> Corso di Laurea in <span id="due"> Informatica</span></p>
+            </div>
+        </header>
+        <div class="subheader">
+            DIPARTIMENTO SCIENZE MATEMATICHE, FISICHE E INFORMATICHE
+        </div>
+
+        <div class="container">
+            
+            <div class="t"> Come funziona: Selection Sort </div>
+            <div class="a">
+                L'algoritmo SELECTION SORT ha come scopo quello di ordinare tutti gli elementi di una sequenza in ordine crescente.
+                <p>Per farlo sfrutta due 'cicli' che gli permettono di trovare il valore minimo nella sequenza e collocarlo nella posizione corretta.</p>
+                <p>A differenza del BubbleSort, questo algoritmo una volta che trova la posizione corretta di un elemento, non ha più bisogno di spostarlo.</p>
+                <p>Avendo due cicli annidati uno dentro l'altro, Selection Sort deve controllare tutti gli elementi della sequenza N volte, ottenendo un costo di N2</p>
+            </div>
+            <div class="b">
+                <div>
+                    <img class="imgif" src="../selectionanimation.gif">
+                </div>
+            </div>
+            <div class="c">
+                <span style="text-align:center; width:100%;">PSEUDOCODICE</span>
+                <br><b>SelectionSort(A:lista degli elementi da ordinare)
+                <br>&nbsp for i← 1 to lunghezza(A) do
+                <br>&nbsp &nbsp minimo← i
+                <br>&nbsp &nbsp for j← i to lunghezza(A) do
+                <br>&nbsp &nbsp &nbsp if A[minimo] >A[j] then
+                <br>&nbsp &nbsp &nbsp &nbsp min← j
+                <br>&nbsp temp←A[i] 
+                <br>&nbsp A[i]←A[minimo]
+                <br>&nbsp A[minimo]←temp </b>
+            </div>
+            <div class="puls1"><a href="funzionamentoB.html"><button style="float:right"> CAMBIA ALGORITMO</button></a></div>
+            <div class="puls2"><a href="bubblesort.html"><button style="margin-left:2.5%; "> GIOCA ANCORA</button></a></div>
+            <div id="wait" style="position:absolute; width:1px;height:1px;"></div>
+
+        </div>
+              
+
+
+
+        <script>
+
+            ///////////////////////////////////// CARICAMENTO PAGINA //////////////////////////////////////////////////
+            $("#wait").fadeOut(1);
+            $("#wait").toggle(5,function(){
+                if(parseInt($(".imgif").css('width').slice(0,-2))>600){               
+                    $(".container").css('width','50%');
+                    $(".a").css('font-size','2.3ch');
+                }
+                else{
+                    //schermo tablet cell
+                    $(".c").css('width','92%');
+                    $(".imgif").css('width','100%'); 
+                    $(".a").css('font-size','2.2ch');  
+                    }
+            });
+
+            if(parseInt($("#id_logo").css('width').slice(0,-2))<150){
+                $("#id_logo").css('width','260px');       
+            } 
+
+             if(parseInt($("html").css('width').slice(0,-2))>1200){
+                console.log('pc');
+                //se sono su pc
+                $(".grid-container").css('margin','0% 5%');
+                $("#uno").css('margin-top','5px');
+                $(".subheader").html("<span>DIPARTIMENTO SCIENZE MATEMATICHE, FISICHE E INFORMATICHE</span>");
+             }
+             else{ //se sono su tablet cell
+                console.log('smart');
+                $(".grid-container").css('margin','0% 10%');
+                $(".subheader").addClass('shp');
+                $(".a").html("L'algoritmo SELECTION SORT ha come scopo quello di ordinare tutti gli elementi di una sequenza in ordine crescente.<p>Per farlo sfrutta due 'cicli' che gli permettono di trovare il valore minimo nella sequenza e collocarlo nella posizione corretta.</p><p>Questo algoritmo una volta che trova la posizione corretta di un elemento, non ha più bisogno di spostarlo .</p><p>Avendo due cicli annidati, Selection Sort deve controllare tutti gli elementi della sequenza N volte, ottenendo un costo di N2</p>");
+                
+            }
+            ////////////////////////////////////////////////////////////////////////////////////
+
+            $("button").mouseenter(function(){
+                $(this).css("background-color","#ffc44d");
+            });
+            $("button").mouseleave(function(){
+                $(this).css("background-color","#FFAA00");
+            });
+        </script>
+    </body>
+</html>
