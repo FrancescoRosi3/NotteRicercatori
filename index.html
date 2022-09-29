@@ -88,6 +88,15 @@
                     $(this).css("color","white");
                 }
             })
+            
+            var testmob = (/iphone|ipod|ipad|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+
+            // //alert(window.navigator.userAgent);
+            if (testmob) {
+                 /*Si sta utilizzando un dispositivo riconosciuto mobile*/ 
+                $(".selection").css('height','50%');
+                $(".bubble").css('height','50%');
+            }
         </script>
     </body>
 </html>
