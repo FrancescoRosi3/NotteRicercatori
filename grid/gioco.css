@@ -38,15 +38,18 @@ body{
     display: grid;
     grid-template-areas:
       'titolo titolo titolo titolo titolo'
-      'spazioP pulsanti pulsanti pulsanti spazioP '
+      'spazioP1 pulsanti pulsanti pulsanti spazioP2 '
       'indicatore indicatore indicatore indicatore indicatore '
       'cpu cpu spazio user user '
       'footer footer footer footer footer';
 
   }
 
-.spazioP{
-    grid-area:spazioP;
+.spazioP1{
+    grid-area:spazioP1;
+}
+.spazioP2{
+    grid-area:spazioP2;
 }
   
 
