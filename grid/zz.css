@@ -1,9 +1,9 @@
-.titolo { grid-area: titolo; background-color: beige;}
-.indicatore { grid-area: indicatore; background-color: beige;  }
+.titolo { grid-area: titolo; background-color: #F7F7F7;}
+.indicatore { grid-area: indicatore; background-color: #F7F7F7;  }
 .spazio { grid-area: spazio;  background-color: #2196F3; }
-.cpu { grid-area: cpu; height:300px; margin-right:-5%; background-color: beige;}
-.user { grid-area: user; margin-left:-5%; background-color: beige;}
-.footer { grid-area: footer;background-color: beige; }
+.cpu { grid-area: cpu; height:300px; margin-right:-5%; background-color: #F7F7F7;}
+.user { grid-area: user; margin-left:-5%; background-color: #F7F7F7;}
+.footer { grid-area: footer;background-color: #F7F7F7; }
 
 .grid-container {
   display: grid;
